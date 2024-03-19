@@ -22,5 +22,5 @@ fn get_config() -> Config {
         .expect("Unable to load config file")
         .resolve()
         .expect("Config deserialize error");
-    config  // Return the resolved configuration
+    config // Return the resolved configuration
 }

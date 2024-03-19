@@ -1,12 +1,12 @@
+use crate::config::CONFIG;
+use crate::consumer::consumer;
 use rdkafka::config::ClientConfig;
 use rdkafka::consumer::Consumer;
 use rdkafka::Message;
-use crate::config::CONFIG;
-use crate::consumer::consumer;
 
 mod config;
-mod models;
 mod consumer;
+mod models;
 
 fn main() {
     env_logger::init(); // Initialize the logger
