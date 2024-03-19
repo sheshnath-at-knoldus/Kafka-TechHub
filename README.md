@@ -48,7 +48,7 @@ Follow these steps to run the Rust Kafka Consumer Service and the Rust Kafka Pro
    - Build and run the Rust Kafka Consumer Service using Cargo:
 
      ```bash
-     cargo run
+     RUST_LOG=info,debug cargo run
      ```
 
 5. **Build and Run Producer Service**:
@@ -56,7 +56,7 @@ Follow these steps to run the Rust Kafka Consumer Service and the Rust Kafka Pro
    - Build and run the Rust Kafka Producer Service using Cargo:
 
      ```bash
-     cargo run
+     RUST_LOG=info,debug cargo run
      ```
 
 6. **Verify Message Consumption**: After running both services, verify that messages are being produced by the Kafka Producer Service and consumed by the Kafka Consumer Service.
