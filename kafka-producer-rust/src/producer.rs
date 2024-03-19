@@ -5,6 +5,7 @@ use crate::config::CONFIG;
 use crate::model::Person;
 
 pub fn producer(producer:BaseProducer, person_data: Person){
+    // Loop to produce messages multiple times
     for _ in 1..10{
         producer.send(
             BaseRecord::to(&CONFIG.topic)

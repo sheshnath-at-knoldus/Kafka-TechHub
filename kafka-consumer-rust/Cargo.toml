@@ -1,5 +1,5 @@
 [package]
-name = "kafka_techhub_consumer"
+name = "kafka-consumer-rust"
 version = "0.1.0"
 edition = "2021"
 
